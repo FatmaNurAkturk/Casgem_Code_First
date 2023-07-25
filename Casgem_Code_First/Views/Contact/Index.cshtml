@@ -1,0 +1,73 @@
+﻿@model List<Casgem_Code_First.DAL.Entities.Contact>
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+    @Html.Action("PartialHead", "Default")
+</head>
+<body id="home">
+
+
+    @Html.Action("PartialNavbar", "Default")
+
+
+    @Html.Action("PartialSliderScript", "Default")
+
+    <!--theme switcher dark and light mode script//-->
+    <!-- breadcrumbs -->
+    <section class="w3l-inner-banner-main">
+        <div class="about-inner contact">
+            <div class="breadcrumbs-sub">
+                <ul class="breadcrumbs-custom-path">
+                    <li class="right-side propClone"><a href="index.html" class="editContent">Anasayfa <span class="fa fa-angle-right" aria-hidden="true"></span></a> <p></li>
+                    <li class="active editContent">
+                        İletişim
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- breadcrumbs //-->
+    <section class="w3l-contact-info-main" id="contact">
+        <div class="contact-sec	editContent">
+            <div class="container">
+                <div class="map-content-9 mb-5 ">
+                    <form method="post">
+                        <div class="twice-two">
+                            <input type="text" class="form-control" name="NameSurname" placeholder="Ad Soyad" required="">
+                            <input type="email" class="form-control" name="Mail" placeholder="Mail" required="">
+                            <input type="text" class="form-control" name="Subject" placeholder="Konu" required="">
+
+                        </div>
+                        <textarea name="Message" class="form-control" placeholder="Mesaj" required=""></textarea>
+
+                        <div class="text-right">
+                            <button type="submit" class="btn btn-contact">Mesaj Gönder</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="d-grid contact-view">
+
+                    @Html.Action("Map")
+
+                    <div class="map-iframe ">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24437.80007158647!2d32.881466453036424!3d40.036918676168945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4082086d29b99d0f%3A0xae9925dae6fd007a!2sPursaklar%2C%20Ankara!5e0!3m2!1str!2str!4v1689493527257!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="300" frameborder="0" style="border: 0px; pointer-events: none;" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    @Html.Action("Contact", "About")
+
+
+    @Html.Action("JS", "About")
+</body>
+
+</html>

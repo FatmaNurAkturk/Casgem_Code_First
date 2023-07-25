@@ -1,0 +1,29 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html lang="en">
+@Html.Action("PartialHead", "Default")
+<body id="home">
+    <section class=" w3l-header-4 header-sticky">
+        <!--header-->
+        @Html.Action("PartialNavbar", "Default")
+        <!--/header-->
+    </section>
+    @Html.Action("PartialSliderScript")
+    <!--theme switcher dark and light mode script//-->
+    <!-- breadcrumbs -->
+    @Html.Action("PartalBreadcrumbs")
+    <!-- breadcrumbs //-->
+    @Html.Action("Detay")
+
+    @Html.Action("Team")
+    @Html.Action("Contact")
+
+    @Html.Action("JS")
+
+</body>
+
+</html>

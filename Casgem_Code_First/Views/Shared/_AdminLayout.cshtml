@@ -1,0 +1,82 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Templates/sidebar-03/css/style.css">
+</head>
+<body>
+
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar" class="active">
+            <div class="custom-menu">
+                <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                    <i class="fa fa-bars"></i>
+
+                </button>
+            </div>
+            <div class="p-4">
+
+                <ul class="list-unstyled components mb-5">
+
+                    <li>
+                        <a href="/AdminAbout/Index/"><span class="fa fa-user mr-3"></span>Hakkımda </a>
+                    </li>
+                    <li>
+                        <a href="/AdminBooking/Index/"><span class="fa fa-briefcase mr-3"></span>Planlama </a>
+                    </li>
+                    <li>
+                        <a href="/"><span class="fa fa-sticky-note mr-3"></span> Kategori</a>
+                    </li>
+                    <li>
+                        <a href="/Adminiletisim/Index/"><span class="fa fa-paper-plane mr-3"></span> İletişim</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="fa fa-paper-plane mr-3"></span> Açıklama</a>
+                    </li>
+
+                    <li>
+                        <a href="/AdminGaleri/Index/"><span class="fa fa-paper-plane mr-3"></span> Galeri</a>
+                    </li>
+                    <li>
+                        <a href="/AdminGuide/Index/"><span class="fa fa-paper-plane mr-3"></span> Rehberler</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="fa fa-paper-plane mr-3"></span> Mesajlar</a>
+                    </li>
+                    <li>
+                        <a href="/SocialMedia/Index/"><span class="fa fa-paper-plane mr-3"></span> Sosyal Medya</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="fa fa-paper-plane mr-3"></span>Seyehatler </a>
+                    </li>
+                </ul>
+
+
+
+
+            </div>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content" class="p-4 p-md-5 pt-5">
+            @RenderBody()
+        </div>
+    </div>
+
+    <script src="~/Templates/sidebar-03/js/jquery.min.js"></script>
+    <script src="~/Templates/sidebar-03/js/popper.js"></script>
+    <script src="~/Templates/sidebar-03/js/bootstrap.min.js"></script>
+    <script src="~/Templates/sidebar-03/js/main.js"></script>
+</body>
+</html>

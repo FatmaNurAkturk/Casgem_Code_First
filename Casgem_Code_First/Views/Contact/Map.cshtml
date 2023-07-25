@@ -1,0 +1,35 @@
+﻿@model List<Casgem_Code_First.DAL.Entities.Iletisim>
+@foreach (var item in Model)
+{
+
+<div class="cont-details">
+    <h3 class="sub-title">Hızlı İletişim</h3>
+    <p class="para mt-3 mb-4">Bizimle Anında İletişime Geçin.</p>
+    <div class="cont-top">
+        <div class="cont-left text-center">
+            <span class="fa fa-phone text-secondary"></span>
+        </div>
+        <div class="cont-right">
+            <p class="para"><a href="tel:@item.Telefon">@item.Telefon</a></p>
+        </div>
+    </div>
+    <div class="cont-top margin-up">
+        <div class="cont-left text-center">
+            <span class="fa fa-envelope-o text-secondary"></span>
+        </div>
+        <div class="cont-right">
+            <p class="para"><a href="mailto:@item.Mail" class="mail">@item.Mail</a></p>
+        </div>
+    </div>
+    <div class="cont-top margin-up">
+        <div class="cont-left text-center">
+            <span class="fa fa-map-marker text-secondary"></span>
+        </div>
+        <div class="cont-right">
+            <p class="para">
+                @item.Address
+
+            </p>
+        </div>
+    </div>
+</div>}

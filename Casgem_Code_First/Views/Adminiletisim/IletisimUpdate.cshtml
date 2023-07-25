@@ -1,0 +1,40 @@
+﻿@model Casgem_Code_First.DAL.Entities.Iletisim
+@{
+    ViewBag.Title = "IletisimUpdate";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Hizmet Güncelleme Sayfası</h2>
+<form method="post">
+    @Html.HiddenFor(x => x.IletisimID)
+    @Html.Label("Adres")
+    @Html.TextBoxFor(x => x.Address, new { @class = "form-control" })
+    <br />
+    @Html.Label("Telefon")
+    @Html.TextBoxFor(x => x.Telefon, new { @class = "form-control" })
+    <br />
+
+    @Html.Label("Mail")
+    @Html.TextBoxFor(x => x.Mail, new { @class = "form-control" })
+    <br />
+    @Html.Label("Facebook URL")
+    @Html.TextBoxFor(x => x.FaceURL, new { @class = "form-control" })
+    <br />
+    @Html.Label("Twitter URL")
+    @Html.TextBoxFor(x => x.TwitterURL, new { @class = "form-control" })
+    <br />
+    @Html.Label("Insagram URL")
+    @Html.TextBoxFor(x => x.InsagramURL, new { @class = "form-control" })
+    <br />
+    @Html.Label("Mail URL")
+    @Html.TextBoxFor(x => x.MailURL, new { @class = "form-control" })
+    <br />
+    @Html.Label("Linkedin URL")
+    @Html.TextBoxFor(x => x.LinkedinURL, new { @class = "form-control" })
+    <br />
+
+
+
+    <button class="btn btn-success">İletişimi Güncelle</button>
+</form>
+

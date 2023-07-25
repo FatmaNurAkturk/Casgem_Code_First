@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>İletişim Listesi</h2>
+
+<table class="table table-bordered">
+
+    <tr>
+        <th>#</th>
+        <th>Adres</th>
+        <th>Telefon</th>
+        <th>Mail</th>
+        <th>Facebook URL</th>
+        <th>Twitter URL</th>
+
+        <th>Instagram URL</th>
+        <th>Mail URL</th>
+        <th>LinkedIn URL</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>@item.IletisimID</td>
+    <td>@item.Address</td>
+    <td>@item.Telefon</td>
+    <td>@item.Mail</td>
+    <td>@item.FaceURL</td>
+    <td>@item.TwitterURL</td>
+    <td>@item.InsagramURL</td>
+    <td>@item.MailURL</td>
+    <td>@item.LinkedinURL</td>
+
+
+    <td><a href="/Adminiletisim/IletisimUpdate/@item.IletisimID" class="btn btn-success">Güncelle</a></td>
+</tr>}
+</table>
+

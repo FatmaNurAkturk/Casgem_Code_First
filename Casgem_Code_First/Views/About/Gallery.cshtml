@@ -1,0 +1,13 @@
+﻿@model List<Casgem_Code_First.DAL.Entities.Gallery>
+<div class="footer-list-29 footer-3">
+    <div class="properties">
+        <h6 class="footer-title-29">Son Fotoğraflar</h6>
+        <div class="images-col">
+            @foreach (var item in Model)
+            {
+<a href="blog-single.html"><img src="@item.GalleryURL" class="img-responsive" alt=""></a>            }
+
+
+        </div>
+    </div>
+</div>
